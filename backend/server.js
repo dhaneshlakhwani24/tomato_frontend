@@ -19,7 +19,9 @@ const port = 4000; // Define the port for the server
 
 // middleware
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: 'https://tomatofrontend-eaznbennw-dhanesh-lakhwanis-projects.vercel.app'
+}));
 
 // db connection
 connectDB();
